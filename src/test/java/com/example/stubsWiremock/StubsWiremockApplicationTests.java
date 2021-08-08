@@ -75,6 +75,7 @@ class StubsWiremockApplicationTests {
 
         Assertions.assertEquals(200, response.statusCode());
         System.out.println(response.getBody().prettyPrint());
+        System.out.println(1);
         Assertions.assertEquals("Janet", response.jsonPath().getString("data.first_name"));
         Assertions.assertEquals("Weaver", response.jsonPath().getString("data.last_name"));
     }
